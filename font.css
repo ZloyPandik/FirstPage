@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Gerbera";
+    src: local("Gerbera"),
+    url("fonts/Gerbera.ttf") format("otf"),
+    url("fonts/Gerbera.woff") format("woff"),
+}
+
+
+body {
+    font-family: "Gerbera", Arial, sans-serif;
+}
+
+button {
+    font-size: 25px;
+    font-family: "Gerbera", Arial, sans-serif;
+    color: #ffffff;
+    background-color: #a7a6a6;;
+    border-radius: 15px 15px 15px 15px;
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 15px;
+    border: 2px solid #ffffff;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #c5c5c5;
+    text-shadow: 0 0 3px #afafaf;
+}
+
+button:active {
+    box-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 3px #f1f1f1;
+}

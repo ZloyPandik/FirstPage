@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/script.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="font.css">
+        <title>Document</title>
+    </head>
+    
+    
+    <body>
+        <div class="a">
+            <nav>
+                <ul>
+                    <li><a href="#about">О себе</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <section id="about">
+            <h1>О себе</h1>
+            <p class="about">Я Мишаня. Самый лучший староста на свете самой лучшей на свете группы 111б-ПИо. 
+                Если бы не я, они все бы уже спились и умерли от депрессии, но благодаря мне наша семья остаётся такой, какая она есть</p>
+        </section>
+        <div class="container">
+            <img src="assets/images/82620622-0b9d-4c2e-9c69-fcd141c41b72.png" alt="Мишаня(лучший)" width="600" height="600" />
+        </div>
+        <section id="skills">
+            <table>
+                    <tr>
+                        <th>Категория</th>
+                        <th>Навыки</th>
+                    </tr>
+  
+                <tr>
+                    <td class="bold">Технические навыки</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td class="bold">Управленческие навыки</td>
+                    <td>Коммуникации, тирания</td>
+                </tr>
+            </table>
+        </section>
+        <section id="education">
+            <h2>Образование</h2>
+            <ul class="edu">
+                <li>Когда-то он и сам бы перспективным студентом...</li>
+                <li>Но потом народ огня развязал войну...</li>
+            </ul>
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>
+                Социальные сети:
+                <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79505676081">Телеграм</a>
+            </p>
+        </section>
+    
+        <div class="feedback">
+            <h3>Свяжитесь со мной</h3>
+            <form id="feedbackForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name"><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+    
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+    
+                <button type="submit">Отправить</button>
+                <div id="response"></div>
+            </form>
+        </div>
+    
+        <div>
+            <h3>Опрос</h3>
+            <form id="interestsForm" class="border">
+                <label for="name1">Имя:</label>
+                <input type="text" id="name1" name="name1"><br><br>
+                <label for="age1">Возраст:</label>
+                <input type="number" id="age1" name="age1" min="1" max="120"><br><br>
+                <fieldset>
+                    <legend>Укажите ваш пол:</legend>
+                    <div>
+                        <input type="radio" id="m" name="gender" value="m" checked />
+                        <label class="pam" for="m">М</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="zh" name="gender" value="zh" />
+                        <label class="pam1" for="zh">не М</label>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Выберите ваши интересы:</legend>
+    
+                    <input type="checkbox" name="interests" value=" Учёба" id="book"><label for="book" class="size"> Учёба</label><br>
+                    <input type="checkbox" name="interests" value=" Учёба" id="film"><label for="film" class="size"> Учёба</label><br>
+                    <input type="checkbox" name="interests" value=" Учёба" id="anime"><label for="anime" class="size"> Учёба</label><br>
+                    <input type="checkbox" name="interests" value=" Молчание..." id="sport"><label for="sport" class="size"> Молчание...</label><br>
+                    <input type="checkbox" name="interests" value=" Душить Машу Ш" id="normal"><label for="normal" class="size"> Душить Машу Ш</label><br>
+                    <input type="checkbox" name="interests" value=" Выпить чего-нибудь крепкого" id="lazy"><label for="lazy" class="size"> Выпить чего-нибудь крепкого</label><br>
+    
+                    <div id="dynamic-interests"></div>
+                    <br><button type="button" id="addInterestButton">Добавить новое поле для интересов</button>
+                </fieldset>
+    
+                <br>
+    
+                <div id="interestModal" style="display:none;">
+                    <label for="newInterestText">Введите текст нового интереса:</label>
+                    <input type="text" id="newInterestText">
+                    <button type="button" id="saveInterestButton">Сохранить</button>
+                    <button type="button" id="cancelInterestButton">Отмена</button>
+                </div>
+    
+                <br>
+    
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" maxlength="200" wrap="hard"></textarea><br><br>
+                <div id="charCount">0/200 символов</div>
+                <br>
+                <button type="submit">Отправить</button>
+                <div id="response1"></div>
+            </form>
+    
+            <div id="formOutput"></div>
+        </div>
+    </body>
+</html>
